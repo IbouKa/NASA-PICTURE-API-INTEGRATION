@@ -1,18 +1,27 @@
-# Salesforce DX Project: Next Steps
+# 🚀 Intégration de l'API NASA PICTURE avec Salesforce
+Étapes d'intégration
+# 1. 🔗 Configuration du Remote Site Settings
+Accéder à Setup > Remote Site Settings.
+Ajouter l'URL de l'API NASA :  https://api.nasa.gov/.
+# 2. ✅ Trust et Permissions
+S'assurer que les utilisateurs disposent des permissions pour accéder à l'objet Apex effectuant les appels API externes.
+Ajouter les sites : 
+https://api.nasa.gov/ et https://apod.nasa.gov
+# 3. 🏷️ Création d'un Custom Label pour la clé API
+Accéder à Setup > Custom Labels.
+Créer un label :
+Label : NASA_API_KEY
+Value : ta clé API.
+# 4. 🛠️ Récupération de la clé API et des données dans LWC
+Importe le Custom Label dans le fichier .js du LWC et appel le web service
+# 5. 🌐 Affichage de l'image dans le HTML du LWC
+Dans le fichier .html, ajouter une balise <img> pour afficher l'image  :
+# 6. Déploiment dans ton org
+BOOM vous pouvez prendre votre café maintenant et explorez les belle images
+![image](https://github.com/user-attachments/assets/d22bce58-1875-489e-a11c-425eab20f24a)
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+![image](https://github.com/user-attachments/assets/f05f4e9a-55ac-405e-9fd0-df6cce45286e)
 
-## How Do You Plan to Deploy Your Changes?
+![image](https://github.com/user-attachments/assets/a626019a-4e44-4ca6-9b8c-e387e1c78d46)
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
 
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
