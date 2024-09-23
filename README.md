@@ -16,7 +16,7 @@ Value : ta clé API.
 Importe le Custom Label dans le fichier .js du LWC et appel le web service
 # 5. 🌐 Affichage de l'image dans le HTML du LWC
 Dans le fichier .html, ajouter une balise <img> pour afficher l'image  :
-# 6. Déploiment dans ton org
+# 6. Déploiment
 BOOM vous pouvez prendre votre café maintenant et explorez les belle images
 ![image](https://github.com/user-attachments/assets/d22bce58-1875-489e-a11c-425eab20f24a)
 
